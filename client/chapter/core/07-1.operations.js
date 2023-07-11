@@ -61,9 +61,13 @@ console.log(newArray);
 // 선,후 증감 연산자
 // ++, --
 
+let counter =0;
+++counter //1
+counter //1
 
 // 아래 코드를 읽기 쉽도록 변경합니다.
 // 그리고 연산자 우선 순위에 따라 연산 과정을 유추해보세요.
 
 let count = 10;
-let total = (count % 4) * (count /= 2) + count ** 3; // ?
+let total = (count % 4) * (count /= 2) + count ** 3; // ? 135
+

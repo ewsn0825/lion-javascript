@@ -60,7 +60,7 @@ if (!didWatchMovie) {
   if(watch){
     let who = prompt('누구랑 볼거야?');
 
-    console.log(`${who}는 이미 봤어`);
+    console.log(`${who}는(은) 이미 봤어`);
   }
   else{
     console.log('문화생활 좀 해라');

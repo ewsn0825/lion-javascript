@@ -42,6 +42,6 @@ let fortuneOfToday;
 // constant variables
 
 const DAYS_PER_YEAR =365;
-const productInfomation='';
 const BRAND_PREFIX="NIKE";
+const productInfomation='';
 

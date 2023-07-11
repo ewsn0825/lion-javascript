@@ -15,3 +15,7 @@ console.log(jujeob);
 
 console.log(self);
 // console.log(this);
+
+//전역객체
+//this self window globalThis
+//전역객체를 오염시키면 안된다. ex) var로 변수 지정을 하면 오염된다.
