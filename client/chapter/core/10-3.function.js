@@ -55,3 +55,26 @@ let pow;
 
 // repeat(text: string, repeatCount: number): string;
 let repeat; 
+
+
+
+
+//객체 안에서 this
+
+const user={
+  total:0,
+  name:'tiger',
+  adddress:'수원시 장안구 구운동',
+  grades:[80,90,100],
+  totalGrades:function () {
+
+    function sayHi() {
+      console.log(this);  
+    }
+    
+    sayHi()
+  }
+}
+
+
+
