@@ -1,5 +1,3 @@
-
-
 import { getNode } from "./getNode.js";
 
 
@@ -13,16 +11,3 @@ export function clearContents(node){
 
   node.textContent = ''
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

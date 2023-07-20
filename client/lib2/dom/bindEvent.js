@@ -1,6 +1,3 @@
-
-
-
 import { getNode } from "./getNode.js";
 
 
@@ -26,10 +23,6 @@ export function bindEvent(node,type,handler){
   // return tiger;
 
 }
-
-
-
-
 
 
 

@@ -1,8 +1,8 @@
-/* class -------------------------------------------------------------------- */
-
 import { getNode } from "./getNode.js";
 
-export function addClass(node,className){
+/* class -------------------------------------------------------------------- */
+
+function addClass(node,className){
   if(typeof node === 'string') node = getNode(node);
   if(typeof className !== 'string'){
     throw new TypeError('addClass 함수의 두 번째 인수는 문자 타입 이어야 합니다.');
@@ -10,7 +10,7 @@ export function addClass(node,className){
   node.classList.add(className);
 }
 
-export function removeClass(node,className){
+function removeClass(node,className){
   
   if(typeof node === 'string') node = getNode(node);
   if(!className) {
@@ -25,7 +25,7 @@ export function removeClass(node,className){
 }
 
 
-export const toggleClass = (node,className)=>{
+const toggleClass = (node,className)=>{
   if(typeof node === 'string') node = getNode(node);
   if(typeof className !== 'string'){
     throw new TypeError('toggleClass 함수의 두 번째 인수는 문자 타입 이어야 합니다.');
@@ -67,7 +67,7 @@ function getCss(node,prop){
 
 
 
-export const css = (node,prop,value) => {
+const css = (node,prop,value) => {
   return !value ? getCss(node,prop) : setCss(node,prop,value);
 }
 

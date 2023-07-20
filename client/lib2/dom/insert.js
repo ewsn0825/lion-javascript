@@ -1,7 +1,6 @@
-
 import { getNode } from "./getNode.js";
 
-export function insertBefore(node,text){
+function insertBefore(node,text){
   if(typeof node === 'string') node = getNode(node);
   
   if(node.nodeType !== document.ELEMENT_NODE){
@@ -10,7 +9,7 @@ export function insertBefore(node,text){
   node.insertAdjacentHTML('beforebegin',text);
 }
 
-export function insertFirst(node,text){
+function insertFirst(node,text){
   if(typeof node === 'string') node = getNode(node);
   
   if(node.nodeType !== document.ELEMENT_NODE){
@@ -28,7 +27,7 @@ export function insertLast(node,text){
   node.insertAdjacentHTML('beforeend',text);
 }
 
-export function insertAfter(node,text){
+function insertAfter(node,text){
   if(typeof node === 'string') node = getNode(node);
   
   if(node.nodeType !== document.ELEMENT_NODE){

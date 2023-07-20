@@ -1,9 +1,7 @@
 //모듈 프로그래밍 => js의 어려운 문법은 x -> 방법론
 
 //getNode 가져오기
-import { getNode ,getNodes} from './lib/dom/getNode.js';
-import { clearContents } from './lib/dom/clearContents.js';
-import { insertLast } from './lib/dom/insert.js';
+import {getNode,clearContents,insertLast} from './lib/index.js';
 
 const first = getNode('#firstNumber');
 const second = getNode('#secondNumber');

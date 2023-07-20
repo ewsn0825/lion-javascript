@@ -1,3 +1,5 @@
+
+
 // const attr = (function(){
 
 // function getAttr(node,prop){
@@ -109,7 +111,7 @@ const arrowAttr = (node, prop, value) =>
 
 
 
-export function attr(node, prop, value) {
+function attr(node, prop, value) {
   // if(!value){
   //   return getAttr(node,prop);
   // }else{
