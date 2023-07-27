@@ -20,9 +20,9 @@ export const tiger = async (options) => {
   };
   const response = await fetch(url, restOptions);
   if (response.ok) {
-    console.log(response);
+    // console.log(response);
     response.data = await response.json();
-    console.log(response.data);
+    // console.log(response.data);
   }
   return response;
 };
